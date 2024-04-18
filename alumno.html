@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Alumno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <section class="container">
+        <h2>Mi perfil</h2>
+        <div class="card-panel2">
+            <p>Nombre: Gustavo Adolfo</p>
+            <p>Apellido: Huamani Fernandez</p>
+            <p>Edad: 23 años</p>
+            <p>Carrera: Ingeniería de Sistemas e Informática</p>
+        </div>
+        <h2>Encuesta</h2>
+        <form id="encuesta">
+            <p>¿Quién es tu profesor favorito?</p>
+            <p>
+                <label>
+                    <input name="profesor" type="radio" value="ROGGER FRANCCESCO DE LA ROSA CAMPOS" />
+                    <span>ROGGER FRANCCESCO DE LA ROSA CAMPOS</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="profesor" type="radio" value="PALOMINO" />
+                    <span>PALOMINO</span>
+                </label>
+            </p>
+            <button class="waves-effect waves-light btn" type="submit">Enviar</button>
+            <p id="resultado"></p>
+        </form>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/alumno.js"></script>
+</body>
+</html>

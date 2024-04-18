@@ -1,3 +1,51 @@
 .btnWitdh {
     width: 100%;
 }
+
+.container {
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #b11212;
+    margin-bottom: 20px;
+}
+
+.collection {
+    border: none;
+}
+
+.collection-item {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.collection-item:hover {
+    background-color: #634646;
+}
+
+
+.card-panel {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #707797;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(242, 242, 242, 0.1);
+    display: none; 
+}
+.card-panel2 {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.card-panel h4 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #b11212;
+}
+
+.card-panel p {
+    margin-bottom: 0;
+    color: #2e2323;
+}
