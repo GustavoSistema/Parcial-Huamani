@@ -1,31 +1,27 @@
 const usuarios = {
-    profe: { username: "profefavorito", password: "123456" },
-    alumno: { username: "alumno", password: "galactico" }
+    usuario1: { username: "usuario1", password: "123456" },
+    conductor: { username: "conductor", password: "123456" }
 };
 
 function verificarAutenticacion() {
     const usuarioAutenticado = localStorage.getItem('usuarioAutenticado');
-    /* 
-    if (usuarioAutenticado === 'profe') {
-        window.location.href = 'index.html';
-    } else if (usuarioAutenticado === 'alumno') {
-        window.location.href = 'alumno.html';
-    } else {
-        localStorage.setItem('usuarioAutenticado', 'profe');
-    }*/
-    
+    if (usuarioAutenticado === 'usuario1') {
+        window.location.href = 'dashboard.html';
+    } else if (usuarioAutenticado === 'conductor') {
+        window.location.href = 'conductor.html';
+    }
 }
 
 function iniciarSesion() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     
-    if (username === usuarios.profe.username && password === usuarios.profe.password) {
-        localStorage.setItem('usuarioAutenticado', 'profe');
+    if (username === usuarios.usuario1.username && password === usuarios.usuario1.password) {
+        localStorage.setItem('usuarioAutenticado', 'usuario1');
         window.location.href = 'dashboard.html';
-    } else if (username === usuarios.alumno.username && password === usuarios.alumno.password) {
-        localStorage.setItem('usuarioAutenticado', 'alumno');
-        window.location.href = 'alumno.html';
+    } else if (username === usuarios.conductor.username && password === usuarios.conductor.password) {
+        localStorage.setItem('usuarioAutenticado', 'conductor');
+        window.location.href = 'conductor.html';
     } else {
         Swal.fire({
             title: "ERROR",
